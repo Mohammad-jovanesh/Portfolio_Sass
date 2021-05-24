@@ -1,0 +1,111 @@
+#hero {
+    width: 100%;
+    min-height: 80vh;
+
+    @include FlexDisplay;
+    padding: 1rem 0rem;
+    .hero_content {
+        flex: 1 1 30rem;
+        padding-left: 15rem;
+        @include Media(lg) {
+            padding-left: 6rem;
+
+            &_skills {
+                padding-right: 10rem;
+            }
+        }
+        @include Media(md) {
+            .hero_content_header {
+                font-size: $header2 * 1.5 !important;
+                background-color: red;
+            }
+            &_skills {
+                font-size: $header1 !important;
+            }
+            &_text {
+                font-size: $header4 !important;
+            }
+        }
+        .hero_content_header {
+            font-size: $header2 * 2;
+            padding: rem;
+            background: $gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &_skills {
+            margin: 3rem 0;
+        }
+        &_text {
+            margin-bottom: 4rem;
+            margin-right: 10rem;
+        }
+        &_social {
+            padding: 1rem;
+            @include FlexDisplay(row, center, flex-start);
+            .MyGitHub {
+                margin-right: 5rem;
+            }
+        }
+    }
+    .hero_image {
+        flex: 1 1 30rem;
+        z-index: 0;
+        .SplashImage {
+            position: absolute;
+            bottom: 2%;
+            right: 0;
+            z-index: -2;
+            height: 100%;
+            @include Media(xl) {
+                display: none;
+            }
+        }
+        #plant-left {
+            transform: translateY(0);
+            animation: PlantAime 1.5s ease infinite alternate;
+        }
+        #plant-right {
+            transform: translateY(0);
+            animation: PlantAime 1.5s ease infinite alternate 0.6s;
+        }
+        #me {
+            transform: rotateZ(0deg);
+            animation: MeAnime 1.5s linear infinite alternate;
+            transform-origin: bottom;
+        }
+        #clock-arrow {
+            animation: ClockAnime 2s linear infinite;
+            transform-origin: bottom;
+            transform-box: fill-box;
+        }
+    }
+}
+
+@keyframes PlantAime {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-30%);
+    }
+}
+@keyframes MeAnime {
+    from {
+        transform: rotateZ(-5deg);
+    }
+    to {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes ClockAnime {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

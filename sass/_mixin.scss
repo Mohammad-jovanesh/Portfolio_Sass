@@ -1,0 +1,23 @@
+@mixin FlexDisplay($dir: row, $justify: center, $aling: center) {
+    display: flex;
+    justify-content: $aling;
+    align-items: $justify;
+    flex-direction: $dir;
+}
+@mixin Media($size) {
+    @if ($size==xl) {
+        @media (max-width: 1500px) {
+            @content;
+        }
+    }
+    @if ($size==lg) {
+        @media (max-width: 1300px) {
+            @content;
+        }
+    }
+    @if ($size==md) {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+}
