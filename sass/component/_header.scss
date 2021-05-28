@@ -32,7 +32,6 @@
                 right: -100%;
                 z-index: 1000;
                 @include FlexDisplay(column, center, space-evenly);
-
                 .active {
                     width: 80%;
                     background-color: #fff;
@@ -49,7 +48,6 @@
             }
         }
     }
-
     .navbar {
         width: 60%;
         min-height: 10vh;

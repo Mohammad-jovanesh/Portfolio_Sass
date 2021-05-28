@@ -1,9 +1,8 @@
 #hero {
     width: 100%;
     min-height: 80vh;
-
     @include FlexDisplay;
-    padding: 1rem 0rem;
+    padding: 1rem 0rem 0rem;
     .hero_content {
         flex: 1 1 30rem;
         padding-left: 15rem;
@@ -52,7 +51,7 @@
     }
     .hero_image {
         flex: 1 1 30rem;
-        z-index: 0;
+        z-index: -1;
         .SplashImage {
             position: absolute;
             bottom: 2%;

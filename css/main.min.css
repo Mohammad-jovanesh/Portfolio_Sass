@@ -53,7 +53,7 @@ a { text-decoration: none; color: #2c2c2c; }
 
 #header .navbar .nav_list .nav_item .nav_link { font-size: 2.5rem; }
 
-#hero { width: 100%; min-height: 80vh; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 1rem 0rem; }
+#hero { width: 100%; min-height: 80vh; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 1rem 0rem 0rem; }
 
 #hero .hero_content { flex: 1 1 30rem; padding-left: 15rem; }
 
@@ -74,7 +74,7 @@ a { text-decoration: none; color: #2c2c2c; }
 
 #hero .hero_content_social .MyGitHub { margin-right: 5rem; }
 
-#hero .hero_image { flex: 1 1 30rem; z-index: 0; }
+#hero .hero_image { flex: 1 1 30rem; z-index: -1; }
 
 #hero .hero_image .SplashImage { position: absolute; bottom: 2%; right: 0; z-index: -2; height: 100%; }
 
@@ -106,3 +106,13 @@ a { text-decoration: none; color: #2c2c2c; }
 .Btn_Burger .line:nth-child(2) { top: 50%; transform: translateY(-50%); }
 
 .Btn_Burger .line:nth-child(3) { top: 85%; }
+
+#Footer { width: 100%; background-color: #154353; min-height: 10vh; display: flex; justify-content: space-around; align-items: center; flex-direction: row; z-index: 2; }
+
+#Footer .Footer_Copy { flex: 1 1 30rem; font-size: 4rem; text-align: center; color: 0; }
+
+#Footer .social_cions { flex: 2 1 30rem; display: flex; justify-content: space-around; align-items: center; flex-direction: row; }
+
+#Footer .social_cions a { width: 4rem; height: 4rem; }
+
+#Footer .social_cions a img { width: 100%; height: 100%; }

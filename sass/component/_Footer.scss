@@ -1,0 +1,28 @@
+#Footer {
+    width: 100%;
+    background-color: $background-color;
+    min-height: 10vh;
+    @include FlexDisplay(row, center, space-around);
+
+    z-index: 2;
+    .Footer_Copy {
+        flex: 1 1 30rem;
+        font-size: $header2;
+        text-align: center;
+        color: 0;
+    }
+
+    .social_cions {
+        flex: 2 1 30rem;
+
+        @include FlexDisplay(row, center, space-around);
+        a {
+            width: 4rem;
+            height: 4rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
